@@ -90,7 +90,7 @@ elif st.session_state.estado == "jugando":
 
             st.session_state.indice += 1
             st.session_state.tiempo_inicio = 0
-            st.experimental_rerun()
+            st.rerun()
     else:
         st.session_state.estado = "fin"
         st.experimental_rerun()
