@@ -93,8 +93,7 @@ elif st.session_state.estado == "jugando":
             st.rerun()
     else:
         st.session_state.estado = "fin"
-        st.experimental_rerun()
-
+        st.rerun()
 elif st.session_state.estado == "fin":
     st.success("✅ ¡Has terminado la serie!")
     aciertos = sum(1 for r in st.session_state.resultados if r['correcta'])
