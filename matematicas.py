@@ -55,7 +55,7 @@ if st.session_state.estado == "inicio":
         st.session_state.indice = 0
         st.session_state.resultados = []
         st.session_state.estado = "jugando"
-        st.experimental_rerun()
+        st.rerun()
 
 elif st.session_state.estado == "jugando":
     indice = st.session_state.indice
